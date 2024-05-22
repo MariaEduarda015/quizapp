@@ -155,6 +155,10 @@ main{
     color: var(--primary-text-color);
 }
 
+.alternativa label:has(input:checked) {
+    
+}
+
 .alternativas input{
     display: none;
 }
