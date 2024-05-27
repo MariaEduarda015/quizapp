@@ -200,4 +200,14 @@ main button:houver{
         width: 20px;
         height: 20px;
     }
+
+    main  {
+        display: flex;
+        gap: 140px;
+    }
+
+    main h2,
+    main > div{
+        width: 100%;
+    }
 }
