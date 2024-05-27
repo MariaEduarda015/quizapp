@@ -204,10 +204,36 @@ main button:houver{
     main  {
         display: flex;
         gap: 140px;
+        max-width: 1160px;
+        margin-inline: auto;
     }
 
     main h2,
     main > div{
         width: 100%;
+    }
+
+    main h2{
+        font-size: 64px;
+    }
+
+    .pontuação {
+        border-radius: 24px;
+        margin-bottom: 32px;
+    }
+
+    .pontuação strong {
+        font-size: 144px;
+        
+    }
+
+    .pontuação p {
+        font-size: 24px;
+    }
+
+    main button {
+        font-size: 22px;
+        padding: 24px;
+        border-radius: 24px;
     }
 }
