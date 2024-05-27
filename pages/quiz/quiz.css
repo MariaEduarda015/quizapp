@@ -236,7 +236,7 @@ main{
 }
 
 .alternativas button:houver {
-    background: var(  --purple-houver);
+    background: var(--purple-houver);
     cursor: pointer;
 }
 
