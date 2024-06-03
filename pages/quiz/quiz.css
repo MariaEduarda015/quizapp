@@ -162,7 +162,7 @@ main{
     cursor: pointer;
 }
 
-.alternativas label:houver{
+.alternativas label:hover{
     &span {
         background: var(--bg-accessibility);
         color: var(--purple);
@@ -235,7 +235,7 @@ main{
     transition: background 0.3s;
 }
 
-.alternativas button:houver {
+.alternativas button:hover {
     background: var(--purple-houver);
     cursor: pointer;
 }
