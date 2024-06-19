@@ -8,6 +8,9 @@ const assunto = localStorage.getItem("assunto")
 let quiz = {}
 let pontos = 0
 let pergunta = 1
+let resposta = ""
+let idInputResposta = ""
+let respostaCorreta = ""
 
 botaoTema.addEventListener("click", () => {
   trocarTema(body, botaoTema)
@@ -111,8 +114,23 @@ function alterarSinais(texto) {
   return texto.replace(/>/g, "&lt").replace(/>/g, "&gt;")
 }
 
-function guardarResposta(){
-  console.log("guardar resposta")
+function guardarResposta(evento){
+  resposta = evento.target.value
+  idInputResposta = evento.target.id 
+
+  const botaoEnviar  = document.querySelector(".alternativa button")
+  botaoEnviar.addEventListener("click", validarResposta)
+  
+}
+
+function validarResposta (){
+  if(resposta === quiz.question[pergunta-1].aswer) {
+    document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta")
+    pontos = pontos = 1 
+  }else{
+    document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada")
+    document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta")
+  }
 
 }
 
@@ -124,6 +142,10 @@ async function iniciar(){
   const inputResposta = document.querySelectorAll(".altenativas input")
   inputResposta.forEach(input => {
     input.addEventListener("click", guardarResposta)
+
+    if(input.value === quiz.question[pergunta-1].aswer) {
+      respostaCorreta = input.id
+    }
   })
 
 }
