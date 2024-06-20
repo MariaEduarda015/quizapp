@@ -59,7 +59,7 @@ header {
     gap: 16px;
 }
 
-.assunto_ícone{
+.assunto_icone{
     background: var(--bg-accessibility);
     width: 40px;
     height: 40px;
@@ -73,7 +73,7 @@ header {
     color: var(--primary-text-color);
 }
 
-.assunto_ícone img {
+.assunto_icone img {
     width: 100%;
 }
 
@@ -108,6 +108,7 @@ header {
     height: 20px;
     width: 32px;
     background: var(--purple);
+    border: 0;
     border-radius: 999px;
     padding: 4px;
     display: flex;
@@ -136,7 +137,7 @@ main h2 strong{
     font-weight: 500;
 }
 
-.pontuação{
+.pontuacao{
     background: var(--pontuação-bg);
     padding: 32px;
     display: flex;
@@ -148,13 +149,13 @@ main h2 strong{
     box-shadow: var(--shadow);
 }
 
-.pontuação strong{
+.pontuacao strong{
     font-size: 88px;
     color: var(--primary-text-color);
     font-weight: 500;
 }
 
-.pontuação p{
+.pontuacao p{
     color: var(--secondary-text-color);
     font-size: 18px;
 }
@@ -191,7 +192,7 @@ main button:hover{
         margin-inline: auto;
     }
 
-    .assunto_ícone {
+    .assunto_icone {
         width: 56px;
         height: 56px;
         padding: 8px;
@@ -227,7 +228,7 @@ main button:hover{
     }
 
     main h2,
-    main > div{
+    main div{
         width: 100%;
     }
 
@@ -235,17 +236,17 @@ main button:hover{
         font-size: 64px;
     }
 
-    .pontuação {
+    .pontuacao {
         border-radius: 24px;
         margin-bottom: 32px;
     }
 
-    .pontuação strong {
+    .pontuacao strong {
         font-size: 144px;
         
     }
 
-    .pontuação p {
+    .pontuacao p {
         font-size: 24px;
     }
 
